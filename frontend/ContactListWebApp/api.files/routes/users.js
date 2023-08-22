@@ -134,7 +134,7 @@ async function openRealm() {
     throw 'User not validated';
   } else {
     const config = {
-      schema: [Contact],
+      schema: [Contacts],
       sync: {
         user: app.currentUser,
         flexible: true,

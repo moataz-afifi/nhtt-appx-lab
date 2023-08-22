@@ -6,10 +6,10 @@ const Contact = {
   name: 'Contact',
   properties: {
     _id: 'objectId',
-    owner_id: 'string',
+    owner_id: 'string?',
     firstName: 'string?',
     lastName: 'string?',
-    age: 'int?'
+    age: 'string?'
   },
   primaryKey: '_id',
 };
