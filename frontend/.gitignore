@@ -3,7 +3,6 @@ ContactListWebApp/node_modules/
 ContactListWebApp/mongodb-realm/
 ContactListWebApp/Dockerfile
 ContactListWebApp/install.dependencies.sh
-ContactListWebApp/.env
 .DS_Store
 ../.DS_Store
 ../backend/.DS_Store
