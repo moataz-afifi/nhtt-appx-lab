@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "age": {
+            "bsonType": "long"
+        },
+        "firstName": {
+            "bsonType": "string"
+        },
+        "lastName": {
+            "bsonType": "string"
+        },
+        "owner_id": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "owner_id"
+    ],
+    "title": "Contact",
+    "type": "object"
+}

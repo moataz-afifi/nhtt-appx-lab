@@ -1,0 +1,21 @@
+{
+  "name": "contactlistwebapp",
+  "version": "1.0.0",
+  "description": "Test application to list contacts on web app linked to iOS app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon api.files/app.js"
+  },
+  "author": "Josman Pérez",
+  "license": "MIT",
+  "dependencies": {
+    "bson": "^4.6.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "realm": "^10.17.0",
+    "socket.io": "^4.5.0"
+  }
+}

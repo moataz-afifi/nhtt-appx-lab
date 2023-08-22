@@ -1,0 +1,12 @@
+# Files relative to the app: ContactListWebApp
+ContactListWebApp/node_modules/
+ContactListWebApp/mongodb-realm/
+ContactListWebApp/Dockerfile
+ContactListWebApp/install.dependencies.sh
+ContactListWebApp/.env
+.DS_Store
+../.DS_Store
+../backend/.DS_Store
+ContactListWebApp/package-lock.json
+ContactListWebApp/logs/nginx/access.log
+ContactListWebApp/logs/nginx/error.log
