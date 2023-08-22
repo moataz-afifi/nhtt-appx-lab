@@ -87,17 +87,10 @@ async function openRealm() {
     throw 'User not validated';
   } else {
     const config = {
-      schema: [Contact],
+      schema: [Contacts],
       sync: {
         user: app.currentUser,
         flexible: true,
-      },
-      initialSubscriptions: {
-        update: (subs, realm) => {
-          subs.add(
-            realm.objects('Contact')
-            );
-        },
       },
     }
     try {
@@ -152,7 +145,7 @@ async function save(body) {
 async function update(body) {
   console.log("UPDATE");
   const realm = await openRealm();
-  let id = new BSON.ObjectID(body._id);
+  let id = new body._id;
   const age = parseInt(body.age) || -1;
   const updatedContact = realm.write(() => {
     const contact = realm.objectForPrimaryKey('Contact', id)
@@ -172,7 +165,7 @@ async function update(body) {
 async function remove(body) {
   console.log("DETELE");
   const realm = await openRealm();
-  let id = new BSON.ObjectID(body._id);
+  let id = new body._id;
   realm.write(() => {
     const contact = realm.objectForPrimaryKey('Contact', id)
     realm.delete(contact)

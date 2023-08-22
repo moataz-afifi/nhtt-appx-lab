@@ -138,13 +138,6 @@ async function openRealm() {
       sync: {
         user: app.currentUser,
         flexible: true,
-        initialSubscriptions: {
-          update: (subs, realm) => {
-            subs.add(
-              realm.objects('Contact')
-              );
-          },
-        },
       },
     }
     try {
