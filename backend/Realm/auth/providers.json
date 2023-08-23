@@ -18,6 +18,6 @@
             "resetPasswordUrl": "http://example.org",
             "runConfirmationFunction": false
         },
-        "disabled": false
+        "disabled": true
     }
 }
