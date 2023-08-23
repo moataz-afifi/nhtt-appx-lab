@@ -102,7 +102,7 @@ router.post("/logout", async (req, res) => {
  */
 async function registerUser(email, password) {
   try {
-    await app.emailPasswordAuth.registerUser(email, password)
+    await app.emailPasswordAuth.registerUser({ email, password })
   } catch (err) {
     throw err.message;
   }
